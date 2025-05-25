@@ -5,10 +5,10 @@ const sendEmail = async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: 'yukesh785.in@gmail.com', // receiving email
+    to: 'yukeshyukesh785@gmail.com', // receiving email
     subject: `Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`,
-  };
+  };            
 
   try {
     await transporter.sendMail(mailOptions);
